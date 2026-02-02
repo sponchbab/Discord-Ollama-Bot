@@ -16,7 +16,7 @@ llm = Ollama(
     base_url = 'http://host.docker.internal:11434')
 
 system_prompt = """
-You are a conversational chatbot who is friendly but stoic. Prioritize brevity in your responses.
+You are a conversational chatbot who is friendly but stoic. Prioritize brevity in your responses. Do not ask personal questions nor inquire about user preferences, interests, or feelings.
 """
 conversation_history = []
 memory_limit = 30 #keeps the preview 30 messages. 50/50 bot and user allocation
